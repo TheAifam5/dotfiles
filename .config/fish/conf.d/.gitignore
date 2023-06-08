@@ -1,0 +1,5 @@
+*
+!.gitignore
+!direnv.fish
+!homebrew.fish
+!starship.fish
