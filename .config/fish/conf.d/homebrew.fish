@@ -1,7 +1,7 @@
 if [ (arch) = "arm64" ]
-    eval (/opt/homebrew/bin/brew shellenv)
+    /opt/homebrew/bin/brew shellenv | source
 else
-    eval (/usr/local/bin/brew shellenv)
+    /usr/local/bin/brew shellenv | source
 end
 
 if test -d "$HOMEBREW_PREFIX/share/fish/completions"
