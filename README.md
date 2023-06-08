@@ -9,3 +9,7 @@
 - [Starship](https://starship.rs/)
 - [Git Delta](https://dandavison.github.io/delta/)
 - [Fisher](https://github.com/jorgebucaran/fisher)
+
+## Fonts
+
+- [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts), exactly `MesloLGMDZ`
