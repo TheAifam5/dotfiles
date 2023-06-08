@@ -1,5 +1,5 @@
-*
-!.gitignore
-!fish.config
-!conf.d/
-!themes/
+/*
+!/.gitignore
+!/fish.config
+!/conf.d/
+!/themes/
