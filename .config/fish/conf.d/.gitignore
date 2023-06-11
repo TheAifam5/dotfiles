@@ -1,6 +1,6 @@
 /*
 !/.gitignore
-!/direnv.fish
-!/homebrew.fish
-!/starship.fish
-!/variables.fish
+!/00-homebrew.fish
+!/00-variables.fish
+!/99-direnv.fish
+!/99-starship.fish
