@@ -1,8 +1,17 @@
-if [ (arch) = "arm64" ]
-  /opt/homebrew/bin/brew shellenv | source
-else
-  /usr/local/bin/brew shellenv | source
+set -l HOMEBREW_BIN (
+  if [ (arch) = "arm64" ] && test -e /opt/homebrew/bin/brew -a -x /opt/homebrew/bin/brew
+    echo /opt/homebrew/bin/brew
+  else if test -e /usr/local/bin/brew -a -x /usr/local/bin/brew
+    echo /usr/local/bin/brew
+  end
+)
+
+if [ -z $HOMEBREW_BIN ]
+  __brew_assert_error_message brew
+  return
 end
+
+$HOMEBREW_BIN shellenv | source
 
 if test -d "$HOMEBREW_PREFIX/share/fish/completions"
   set -gx fish_complete_path $fish_complete_path "$HOMEBREW_PREFIX/share/fish/completions"

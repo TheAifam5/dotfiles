@@ -1,3 +1,2 @@
-if status is-interactive
-  starship init fish | source
-end
+__brew_assert_installed starship || return
+starship init fish | source

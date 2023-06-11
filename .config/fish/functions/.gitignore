@@ -1,0 +1,5 @@
+/*
+!/.gitignore
+!/__brew_assert_error_message.fish
+!/__brew_assert_installed.fish
+!/__brew_is_installed.fish
