@@ -15,3 +15,7 @@ set -gx LANG en_US.UTF-8
 
 # Setup gpg tty
 set -gx GPG_TTY (tty)
+
+# Source per-machine variables
+set -l machine_vars ./00-variables.$hostname.fish
+test -f $machine_vars && source $machine_vars
