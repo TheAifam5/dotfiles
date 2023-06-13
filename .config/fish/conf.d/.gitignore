@@ -1,7 +1,7 @@
 /*
 !/.gitignore
 !/00-homebrew.fish
-!/00-variables.fish
+!/01-variables.fish
 !/99-asdf.fish
 !/99-direnv.fish
 !/99-starship.fish
